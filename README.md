@@ -4,7 +4,7 @@
 
 In this project, I created a simple EC2 server that installs and runs Nginx automatically using Terraform. I also created a custom VPC, subnets (public & private), internet gateway, route table, and security group. This project is done in the `eu-north-1` region with a specific free-tier eligible AMI.
 
-## 🛠 What I did step-by-step:
+## What I did step-by-step:
 
 ### 1. **Initialized Terraform Provider**
 
