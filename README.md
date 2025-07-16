@@ -20,19 +20,13 @@ One private (`10.0.1.0/24`) and one public (`10.0.2.0/24`). The public one has `
 
 I attached an internet gateway to the VPC for external connectivity.
 
-```hcl
-resource "aws_internet_gateway" "my-igw" { ... }
-```
-
 ### 5. **Created a Route Table and Association**
 
 I added a route to `0.0.0.0/0` via the internet gateway, and associated it with the public subnet.
 
-
 ### 6. **Created Security Group for Nginx**
 
 Allowed HTTP (port 80) from anywhere, and all outbound traffic.
-
 
 ### 7. **Launched EC2 Instance**
 
